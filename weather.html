@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>city weather</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+        
+        <div id="main">
+             <h1>City Weather</h1>
+       
+             <div id="request">
+            <label id="name">Enter your city name: </label>
+            <input id="city" type="text" autocomplete="off">
+            <button onclick="hit()">Find</button>
+            </div>
+            <div class="card"  >
+           
+                <div class="card-body">
+                <h5 id="card-title">How it feels in your city: </h5>
+                
+
+              <div class="card" style="width: 18rem;">
+               
+                <ul class="list-group list-group-flush">
+                    <li class="item">Temperature:</li>
+                    <li class="list-group-item">Temperature</li>
+                    <li class="item">Feels like:</li>
+                  <li class="list-group-item">Feels like</li>
+                  <li class="item">Humidity:</li>
+                  <li class="list-group-item">Humidity</li>
+                  
+                </ul>
+                
+              </div>
+                
+              <p style="float:inline-end;color: black; margin-top: 100px;">*All temperature is in celsius</p>
+            </div>
+          </div>
+          </div>
+          <div class="loader"></div>
+        </div>  
+        <div class="alert">
+            Please enter valid city name
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">Got it</span> 
+             
+          </div>
+          <footer>
+            Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
+          </footer>
+    </body>
+    <script src="weather.js"></script>
+</html>

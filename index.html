@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Welcome</title>
+    
+<body>
+    <div id="dead">
+    <img  src="Deadpool1.png">
+    
+    <!-- <h2 style="text-align: center;">go back or you'll regret it</h2> -->
+    </div>
+    <div>
+    <button id="red" onclick="back()">Click me otherwise he will come after you</button>
+    </div>
+    </body>
+
+
+    
+</head>
+<style>
+    body{
+        max-width: fit-content;
+        margin-inline: auto;
+        background-color: black;
+    }
+    
+    button{
+        font-style: italic;
+        font-size: large;
+        background-color:red;
+        color: black;
+        
+    }
+    button:hover{
+        background-color: wheat;
+    }
+    
+</style>
+</html>
+<script>
+    function back(){
+        window.location.href='weather.html';
+    }
+</script>
